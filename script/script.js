@@ -9,6 +9,7 @@ const maisImage = document.querySelector('img[alt="mais"]');
 const olijvenImage = document.querySelector('img[alt="olijven"]');
 const wortelImage = document.querySelector('img[alt="wortel"]');
 
+// https://pixabay.com/nl/sound-effects/search/fout/?theme=film+en+speciale+effecten
 const klaargeluid = new Audio('geluiden/klaargeluid.mp3');
 const nietklaargeluid = new Audio('geluiden/errorgeluid.mp3');
 
@@ -29,7 +30,6 @@ function kiesWortel() {
 
 function klaarKnop(){
     console.log("Je kumpir is klaar om op te eten");
-
     if(document.querySelector('img.visible')){
         klaargeluid.play();
         koptekst.textContent = "Je kumpir is klaar om op te eten"
